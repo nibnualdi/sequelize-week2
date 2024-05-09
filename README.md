@@ -19,21 +19,21 @@
 > base url `http://localhost:3000`
 
 > create 5 users at the same time :
-> `POST` `/users`
+>   `POST` `/users`
 
 > get total users :
-> `GET` `/total`
+>   `GET` `/total`
 
 > get paginated users :
-> `GET` `/paginate`
-> **`body`**
-> **`page :`** `(integer) get page. Default value 1`
-> `example : { "page": 2 }`
-> **`limit :`** `(integer) the data that shown in a page. Default value 2`
-> `example : { "limit": 4 }`
+>   `GET` `/paginate`
+>   **`body`**
+>   **`page :`** `(integer) get page. Default value 1`
+>   `example : { "page": 2 }`
+>   **`limit :`** `(integer) the data that shown in a page. Default value 2`
+>   `example : { "limit": 4 }`
 
 > get relations users to profile (LEFT, INNER, RIGHT JOIN) :
-> `GET` `/details`
-> **`body`**
-> **`join :`** `(string) enum "LEFT" || "INNER" || "RIGHT". Default value "INNER"`
-> `example : { "join": "RIGHT" }`
+>   `GET` `/details`
+>   **`body`**
+>   **`join :`** `(string) enum "LEFT" || "INNER" || "RIGHT". Default value "INNER"`
+>   `example : { "join": "RIGHT" }`
