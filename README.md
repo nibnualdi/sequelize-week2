@@ -22,10 +22,10 @@
   >   `POST` `/users`
 
 > get total users :
-  >   `GET` `/total`
+  >   `GET` `/users/total`
 
 > get paginated users :
-  >   `GET` `/paginate`
+  >   `GET` `/users/paginate`
   >   **`body`**
   >   **`page :`** `(integer) get page. Default value 1`
   >   `example : { "page": 2 }`
@@ -33,7 +33,7 @@
   >   `example : { "limit": 4 }`
 
 > get relations users to profile (LEFT, INNER, RIGHT JOIN) :
-  >   `GET` `/details`
+  >   `GET` `/users/details`
   >   **`body`**
   >   **`join :`** `(string) enum "LEFT" || "INNER" || "RIGHT". Default value "INNER"`
   >   `example : { "join": "RIGHT" }`
